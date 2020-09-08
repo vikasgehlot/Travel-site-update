@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+</head>
+<body>
+
+<form>
+	{% csrf_token%}
+	<input type="text" name="username" placeholder="username"><br>
+	<input type="text" name="password" placeholder="Password"><br>
+	<input type="submit" value="Login">
+
+
+</form>
+
+<style>
+body {
+  background-color:  #2F363F;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+
+input{
+	 	color: maroon;
+  		margin: 10px 40px 10px 40px;
+  		border-style: solid;
+  		border-color: #00001a;
+  		border-radius: 5px;
+  		padding: 2px 5px 7px 10px;
+  		height: 30px;
+  		width: 300px;
+
+
+}
+form {
+  border: 1px solid ;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: #019031;
+  padding: 35px 15px 17px 10px;
+}
+
+</style>
+
+
+	
+</body>
+</html>

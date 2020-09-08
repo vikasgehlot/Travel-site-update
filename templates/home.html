@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> My name is {{name}} </h1>
+
+<form action="add" method="POST">
+
+	{% csrf_token %}
+	
+	Enter the number 1 <input type="text" name="num1"><br>
+	Enter the number 2 <input type="text" name="num2"><br>
+    <input type="submit" >
+
+</form>
+
+
+<style>
+body {
+  background-color: #edb879;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+
+input{
+	 	color: maroon;
+  		margin: 10px 40px 10px 40px;
+  		border-style: solid;
+  		border-color:  green;
+  		border-radius: 5px;
+  		padding: 2px 5px 7px 10px;
+  		height: 30px;
+  		width: 300px;
+
+
+}
+form {
+  border: 1px solid red;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: green;
+  padding: 35px 15px 17px 10px;
+}
+
+</style>
+
+
+{% endblock %}
